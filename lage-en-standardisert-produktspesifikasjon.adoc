@@ -1,0 +1,29 @@
+= Veileder i å lage en standardisert produktspesifikasjon
+Versjon 2024-08-26
+
+== Standardisert produktspesifikasjon
+En produktspesifikasjon som både følger standarden for SOSI produktspesifikasjoner, og styrende dokument for standardisering med kvalitetssikring gjennom en åpen konsensusprosess.
+
+SOSI Standarden for produktspesifikasjoner setter krav til struktur og innhold, og til godkjenning.
+Den skal følge en fast disposisjon, og inneholde faste elementer som identifikator, ansvarlig, temakategori o.l.
+Den skal også inneholde kvalitetskrav, geografisk utstrekning, formatrealiseringer og nødvendige metadata.
+Kartverket skal godkjenne alle SOSI produktspesifikasjoner.
+Dette er beskrevet i dokumentet https://register.geonorge.no/standarder/sosi/del-1-generell-del/sosi-produktspesifikasjoner-krav-og-godkjenning
+
+== Støtteverktøy
+Støtteverktøy finnes på stien https://www.geonorge.no/verktoy/verktoy-for-produktspesifikasjon/
+
+== SOSI standarder
+SOSI standarder utvikles etter klare prosessprinsipper.
+Enhver part eller person i geomatikkmiljøet kan sende inn prosjektforslag til standardiseringssekretariatet.
+Etter kvalitetssikering av forslaget sendes dette til standardiseringskomiteen for geomatikk (SKG) for klarsignal.
+Det etableres et prosjekt med åpen invitasjon til deltakelse, samt at nøkkeletater vil bli bedt om å delta.
+Når prosjektet er enige om at de har et ferdig utkast sendes dette ut for åpen høring, vanligvis i fire uker.
+Etter avsluttet høring innarbeider prosjektet kommentarene i utkastet, og kvalitetssikrer innholdet.
+Til slutt sendes det ferdige utkastet SKG for godkjenning.
+Standardiseringssekretariatet publiserer den godkjente standarden og merker tidligere versjon som erstattet.
+
+Dette er beskrevet i dokumentet https://www.geonorge.no/globalassets/geonorge2/standardisering/dokumenter/styrende-dokument---prosess-for-utvikling-av-nasjonale-bransjestandarder-geografisk-informasjon.pdf
+og ytterligere i prosessmodellen https://sosi.geonorge.no/temp/prosesser/
+
+<<<

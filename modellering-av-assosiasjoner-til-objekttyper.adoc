@@ -1,0 +1,13 @@
+= Veileder i modellering av assosiasjoner til objekttyper
+Versjon 2024-08-27
+
+Der en geografisk objekttype (FeatureType) har en navigerbar assosiasjon til en annen objekttype skal den navigerbare assosiasjonsenden ha en tagged value inLineOrByReference med verdien byReference.
+Tagged value inLineOrByReference er beskrevet i standarden regler for UML-modellering versjon 5.1 kapittel 13, og bruken av verdien byReference er for GML beskrevet (noe indirekte) i standarden Realisering i GML-format versjon 5.0 kapittel 7.2.
+Hvis tagged value inLineOrByReference ikke er lagt inn sier standarden iso19136-1 (GML) kapitter E.2.4.11 at default encoding skal brukes. Noen åpen-kildekode-systemer (deegree) forventer at denne taggen er satt eksplisitt så det anbefales da å sette den til byReference.
+
+Grensesnittstandarden WFS (ogc.org/standards/wfs) gir føringer for hvordan man via en parameter i et spørregrensesnitt kan styre i detalj hva responsen skal inneholde. 
+Dersom parameteren resolveDepth er satt til 0 skal lenker til assosierte objekter være fulle url-er til de refererte objektene. 
+Dersom parameteren er satt til 1 skal tjenesten nøste ned en gang (o.s.v.), da skal tjenesten også legge inn de assosierte objektene i returen, og endre lenkene til lokale pekere (#).
+Forøvrig må man ved lesing av GML-filer ta høyde for at full GML åpner for at for to objekter av samme objekttype i samme datasett kan det ene objektet legges inn inline mens det andre objektet kan refereres.
+
+<<<

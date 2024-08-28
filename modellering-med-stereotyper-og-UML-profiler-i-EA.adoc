@@ -1,0 +1,34 @@
+= Veileder i modellering med stereotyper og UML-profiler i EA (15 og seinere)
+Versjon 2024-08-27
+
+== tl;dr - Nye klasser bør lages med EA Toolbox og SOSI-UML-Profil-5.1. 
+Eksisterende klasser kan gjerne bytte til SOSI-UML-Profil-5.1, men da må tagged values kontrolleres. 
+
+== Lengre forklaring:
+Alle klasser skal ha standardiserte stereotyper, og alle modellelementer kan ha et sett med standardiserte tagged values.
+Fra tidligere tider har stereotype vært en enkel tekststreng på modellelementene, og modellelementene har eid sitt eget sett av tagged values. Dette gjelder for eksempel for klasser med tekstlig stereotype «featureType».
+I en periode har modellelementer også kunnet bruke stereotyper fra standardiserte UML-profiler, som for eksempel stereotypen «FeatureType» fra UML-profilen "SOSI-UML-Profil-5.0". Stereotypene i denne profilen eier ingen tagged values.
+Dersom man kun vil ha den anbefalte skrivemåten på stereotypene på gamle klasser uten profil kan man bytte til UML-profil "SOSI-UML-Profil-5.0" uten å endre at alle tagged values er eid av klassene.
+Denne profilen kan ikke brukes via EA 15 sin Toolbox, så endringen må legges inn manuelt (under Properties -> Tags).
+
+Disse gamle metodene kan fortsatt videreføres som de er i EA 15, og det kan fortsatt legges til nye tagged values rett på modellelementene. 
+
+
+En mer framtidsretta løsning er å bytte til stereotyper fra en moderne UML-profil. Hvis man bytter fra gamle modeller vil standardiserte tagged values overføres fra klassen til å bli eid av stereotypen. 
+Den nyeste UML-standarden (ISO 19505:2012) har som hovedbeskrivelse at stereotyper skal beskrives i UML-profiler, og stereotypene skal eie settet med tagged values. 
+Nyere versjoner av Enterprise Architect (EA 14/EA 15) har tatt dette til følge mer og mer, og man kan for eksempel ikke lenger skrive inn et stereotypenavn som tekststreng der.
+Vi har dessverre observert at når vi bytter fra en slik stereotype i en UML-profil til en stereotype fra en annen UML-profil vil vi kunne miste noen eksisterende verdier i de beskrevne tagged values !!!
+Vi må derfor alltid ha god kontroll på verdiene i de beskrevne standardiserte tagged values.
+
+== Vi har i dag tre moderne UML-profiler:
+"GML" som kommer med EA "native" - denne har noen viktige begrensninger og dekker IKKE norske behov og standarder (underpakker behandles ikke etc.). Vi anbefaler derfor å "disable MDG-technology GML" slik at denne ikke vises.
+
+"SOSI" er en UML-profil som kommer med SOSI-plugginn og er i hovedsak utviklet for å følge reglene i SOSI 4.0. Den har en blanding der noen tagger eies av stereotyper og noen eies av klassene, og den dekker fortsatt norske behov.
+
+"SOSI-UML-profil-5.1" som kommer med SOSI-Verktøykasse 1.0 og er en realisering av profilen i standarden Regler for UML-modellering versjon 5.1. Den dekker norske behov.
+
+Vi anbefaler nå at hvis man bytter til andre UML-profiler må man klarlegge hvordan dette kan gjøres uten å miste informasjon.	 Alle de beskrevne variantene har til nå fungert likt i alle eksisterende MDA-løyper (som ShapeChange etc.).
+Det er også ofte vanskelig å se tagger fra stereotyper som kommer fra eldre uml-profiler (for eksempel uml-profil SOSI). Disse taggene kan vises ved å velge elementet, høyreklikke på Properties og så velge Properties…. Da vil en i vinduet som kommer opp kunne se flipper helt til høyre som kan vise resten av elementets tagged values.
+Andre konfigurasjoner som påvirker hvilke tagger man ser er å enable/disable under menyene Specialize: Manage-Tech (for MDG) og Manage-Addin (for Addins).
+
+<<<

@@ -1,0 +1,17 @@
+= Veileder i å modellere en produktspesifikasjon
+Versjon 2024-08-28
+
+Dette er ei 29-punkts løype for å lage informasjonsmodellen i en SOSI-produktspesifikasjon basert på fagområdestandarder.
+
+https://sosi.geonorge.no/veiledere/Veileder_i_å_modellere_produktspesifikasjon_som_utplukk_fra_SOSI_fagområder.pdf
+
+En variant for revisjon:
+
+https://sosi.geonorge.no/veiledere/Veileder_i_å_revidere_produktspesifikasjon.html
+
+
+Utkast til en mer moderne variant, der flere produktspesifikasjoner bygger på hverandre:
+
+https://sosi.geonorge.no/veiledere/Veileder_for_modulær_produktspesifikasjon.html
+
+<<<

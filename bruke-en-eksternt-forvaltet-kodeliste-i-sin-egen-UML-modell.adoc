@@ -1,0 +1,30 @@
+= Veileder i å bruke en eksternt forvaltet kodeliste i sin egen UML-modell
+Versjon 2024-08-27
+
+I modeller som skal benytte eksternt forvaltede kodelister må man lage en egen tom kodeliste med det samme navn som den eksterne.
+
+Denne kodelisten må kun ha tagged value asDictionary = true.
+Egenskaper som har eksternt forvaltede kodelister som type skal kobles opp mot denne tomme i din egen modell.
+
+Da vil modellvalidering ikke melde feil om manglende egenskapstype.
+Det skal også legges inn en tagged value defaultCodeSpace på egenskapen, med stien til kodelista.
+
+<img src="img/defaultCodeSpace.png" alt="egenskapens sti til kodelista">
+
+I ei generert GML 3.2.1 applikasjonsskjemafil vil denne beskrivelsen se slik ut:
+
+<element name="kommunenummer" type="gml:CodeType">
+   <annotation>
+      <appinfo>
+         <defaultCodeSpace xmlns="http://www.opengis.net/gml/3.2> 
+            http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Kommunenummer
+         </defaultCodeSpace>
+         <taggedValue xmlns="http://www.interactive-instruments.de/ShapeChange/AppInfo" tag="SOSI_navn">KOMM</taggedValue>
+      </appinfo>
+   </annotation>
+
+Ei GML 3.2.1 datafil vil bruke formen:
+
+<kommunenummer>0101</kommunenummer>
+
+<<<

@@ -1,0 +1,136 @@
+= Veileder i å revidere en eksisterende SOSI produktspesifikasjon - FKB-utkast
+Versjon 2024-08-28
+
+Forrige versjon fra https://sosi.geonorge.no/veiledere/Veileder_i_å_revidere_produktspesifikasjon.html[2021-07-09]
+
+Dette er en variant av løypa for å lage informasjonsmodellen i en SOSI-produktspesifikasjon som et utplukk av objekttyper fra fagområdene i SOSI del 2. 
+
+https://sosi.geonorge.no/veiledere/Veileder_i_å_modellere_produktspesifikasjon_som_utplukk_fra_SOSI_fagområder.pdf
+
+
+.Steg 1 - Forberedelser med kopiering av pakker
+[%collapsible]
+====
+* Lag ny pakke i SOSI-modellregister
+* Opprett ny pakke under temapakka og legg den inn i revisjonskontroll (lage egen XMI-fil)
+* Pakkenavnet skal ikke inneholde blanke tegn, og XMI-fila skal ha samme navn som den ferdige pakka.
+(Standardisering gjør dette for FKB i forkant denne gangen)
+* Under utviklingsperioden skal pakka ha en tagged value SOSI_modellstatus med verdi utkast eller ukastOgSkjult.
+* Under utviklingsperioden kan man gjerne legge til Utkast i pakkenavnet og eventuelt en dato etter for å få rask oversikt i statusen på pakka.
+====
+
+
+.Steg 2 - Kopier gjeldende applikasjonsskjema med alt innholdet fra en eksisterende produktspesifikasjon inn i den nye pakka
+[%collapsible]
+====
+* Gå til eksisterende pakke i SOSI-modellregister
+* Høyreklikk på eksisterende pakke og velg Copy -> Copy to Clipboard -> Full Structure
+
+Da vil alle referanser mellom elementene i pakka, og alle referanser ut av pakka bli med inn i den nye pakka.
+====
+
+
+
+.Steg 3 - Dra alle eksisterende underpakker og diagrammer opp i den nye pakka
+[%collapsible]
+====
+* Velg alle, og dra og slipp dem på den nye pakka. (Samme som punkt 7 i den gamle veilederen).
+====
+
+.Steg 4 - Revider pakkeinformasjonen i ny pakke og slett gammel pakke
+[%collapsible]
+====
+* Kopier og revider innholdet i notefeltet, og innholdet i hovedpakkas tagged values. (Samme som punkt 15 og 21 i den gamle veilederen).
+====
+
+.Spesielt for FKB Generell del 5.0
+[%collapsible]
+====
+* Kopier inn pakka "Generelle elementer" som ligger under den nye pakka FKB Generell del 5.0 i SOSI-modellregister
+* Gå til FKB Generell del 5.0 i SOSI-modellregister
+* Høyreklikk på pakka og velg Package Control -> Get Latest
+* Høyreklikk på underpakka "Generelle elementer" og velg Copy -> Copy to Clipboard -> Full Structure
+* Deretter høyreklikk på den ny pakka og velg Paste  -> Paste Package
+
+Da vil alle referanser mellom elementene og ut av underpakka "Generelle elementer" bli med inn i den nye pakka.
+
+
+Dra inn nye supertyper i hoveddiagrammene og flytt arvepilene til de nye supertypene
+
+* Åpne eksisterende diagrammer som viser arv av fellesegenskaper
+* Dra aktuelle nye supertyper med fellesegenskaper inn i diagrammet
+* Flytt arvepilene fra gammel supertype over til ny supertype
+* Gamle supertyper kan bli liggende, de vil alle bli borte fra diagrammet når pakka "Generelle konsepter" fjernes
+* (Liknende beskrivelser kan finnes i punkt 11 og 12 i den gamle veilederen).
+
+
+Fjern den gamle pakka med "Generelle konsepter"
+
+* Høyreklikk i Browser og velg Delete
+
+
+Hent inn en ny oppdatert versjon av generelle elementer
+
+* Endre navn på pakka Generelle elementer til noe annet.
+* Kopier inn nyere versjon av pakka Generelle elementer fra SOSI Produktspesifikasjoner - Geovekst
+* Dra inn fellesegenskapsklassene i aktuelle hoveddiagrammer og flytt arvepiler til de nye supertypene.
+* For egne egenskaper som peker på kodelister fra pakka Generelle typer må man manuelt velge nyeste versjon:
+* -velg klasse
+* -velg egenskap (i Features-lista i midten nederst)
+* -under Type klikk på velgepil til høyre og naviger til ny versjon av datatypen eller kodelista og klikk på OK.
+* NB Husk at basistyper og geometrityper ikke skal kobles opp.
+* Når alle koblinger er reetablert kan den gamle renavna pakka slettes.
+====
+
+.Steg 5 - Revider objekttyper og andre klasser
+[%collapsible]
+====
+
+
+Lag hoveddiagram og oversiktsdiagram
+
+* Diagrammene skal oppfylle kravet om at objekttyper og datatyper skal vise alt sitt innhold i et diagram.
+* Dersom applikasjonsskjemaet har for mange klasser å vise fullt ut kan flere hoveddiagram lages, oppdelt etter geometrityper (flater) eller tematisk, eller begge.
+* Har man flere hoveddiagrammer skal man ha et oversiktsdiagram der alle klasser vises (tomme) slik at leseren får full oversikt over innholdet.
+* -Tips slå av egenskapsvisning for alle: "høyreklikk i diagrammet->Properties...Elements->Attributes (slås av til venstre i lista)"
+* -Tips slå av egenskapsvisning for noen: "velg noen klasser i diagrammet og høyreklikk->Compartment Visibility..Attribute Visibility Public(slås av øverst til venstre)"
+* Husk å slå på visning av restriksjoner i hoveddiagrammer, "høyreklikk i diagrammet->Properties...Elements->Constraints(til høyre i lista)"
+* Husk også at du har full styring på rekkefølgen på dokumentasjonen av diagrammer og klasser, bruk de blå pilene rett over browserlista.
+* Et eksempel med hoveddiagram og oversiktsdiagram er lagt ut på http://sosi.geonorge.no/adoc-test
+
+
+Legg inn nye stereotyper på elementene
+
+* Velg etter tur hver klasse, og klikk på flippen Element og velg Stereotype ...
+* I menyen velges SOSI UML Profile 5.1 og ønsket stereotype (som passer i valgt klasse)
+* Legg merke til alle standardiserte tagged values som nå skal være synlige under flippen Element
+* Se gjerne mer om stereotyper under http://sosi.geonorge.no/veiledere#stereotyper
+* .
+* TBD: Hva bør gjøres med stereotyper på egenskaper og roller? Skal vi lage stereotyper på disse også? Har vi full oversikt over alle bieffekter? I tilfelle vi får ulike stereotyper på egenskaper må diagrammene konfigureres så de ikke viser stereotyper og egenskapene sorteres på stereotypene (Høyreklikk inne i diagrammet og velg Properties -> Features og slå av Show Stereotypes).
+
+
+Fjern unødvendige elementer og legg inn nye elementer basert på beskrevne brukstilfeller
+
+* (Samme som punkt 8-10 i den gamle veilederen) Husk å navne diagrammene i henhold til kravene i standarden (Hoveddiagram NNN ... etc.).
+====
+
+.Steg 6 - Lag eksempel på formatrealisering
+[%collapsible]
+====
+Lag en GML-fil med et objekt av hver objekttype og test at det som modellen beskriver kan leses i klienter
+
+* Høyreklikk på applikasjonsskjemapakka og velg Specialize -> Scripts -> listGMLExample. 
+* (Se enkel video som viser bruk av dette skriptet i EA).
+
+video::./video/lageGMLEksempel.mp4[]
+====
+
+.Steg 7 - Dokumenter bruk av fagområdestandarder
+[%collapsible]
+====
+Revider realiseringene til fagområdene og noter ned eventuelle behov for revisjon av fagområder
+
+* (Samme som punkt 15 og 21 i den gamle 29-punktsveilederen).
+====
+
+<<<
