@@ -1,4 +1,4 @@
-== Veiledere i bruk av standarder
+= Veiledere i bruk av standarder
 Versjon 2024-08-30
 
 Hvis du opplever problemer med disse veilederne er det fint om du kan sende en tilbakemelding til +
