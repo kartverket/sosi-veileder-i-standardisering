@@ -28,7 +28,6 @@ include::revidere-en-eksisterende-SOSI-produktspesifikasjon.adoc[]
 include::modellere-en-produktspesifikasjon.adoc[]
 ====
                     
-
 (Installering av modelleringsverktøy)
 
 == Modellering
