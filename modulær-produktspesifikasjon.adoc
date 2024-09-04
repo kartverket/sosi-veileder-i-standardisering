@@ -66,7 +66,7 @@ Eksempel på skjemafil med ekstern avhengighet finnes på http://skjema.geonorge
 
 Se enkel video:
 
-video::video/lageGMLEksempel.mp4
+video::video/lageGMLEksempel.mp4[]
 ====
 
 .Hva kan modularitet brukes til?
