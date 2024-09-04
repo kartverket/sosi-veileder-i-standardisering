@@ -13,6 +13,8 @@ include::revidere-en-eksisterende-SOSI-produktspesifikasjon.adoc[]
 
 Utkast til en mer moderne variant, der flere produktspesifikasjoner bygger på hverandre:
 
+include::modulær-produktspesifikasjon.adoc[]
+
 https://sosi.geonorge.no/veiledere/Veileder_for_modulær_produktspesifikasjon.html
 
 <<<
