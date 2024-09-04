@@ -11,6 +11,7 @@ Dette dekker oftest også alle enklere brukstilfeller, om enn med å måtte få 
 == Modellering av produkt med fler enn et applikasjonsskjema
 
 .Planlegg et applikasjonsskjema for hver gruppe av brukstilfeller eller for hver fase i en dataflyt eller dataformat[%collapsible]
+[%collapsible]
 ====
 * Gruppér brukstilfeller med fellestrekk og bestem hvordan modulstrukturen skal være.
 * Lag en applikasjonsskjemapakke for hver modul.
@@ -31,6 +32,7 @@ https://docs.google.com/spreadsheets/d/1n7tOR8Ny5DcOL9fn_4jZaXeLl33-mwDY2kwq2GAI
 
 
 .Dra inn pakker i pakkediagram og sett avhengigheter mellom disse
+[%collapsible]
 ====
 * I pakker som skal være grunnlag for leveranser lages et pakkediagram som kalles Pakkeavhengighet.
 * Dra inn denne pakka i pakkediagrammet.
@@ -41,6 +43,7 @@ image::img/pakkeavhengighet.png[alt="diagram med en UML-pakke som viser avhengig
 ====
 
 .Dra inn datatyper og supertyper i hoveddiagrammene og sett referanser til disse
+[%collapsible]
 ====
 * Åpne eksisterende hoveddiagrammer og dra aktuelle supertyper og datatyper fra andre pakker inn i diagrammet.
 * Legg inn arvepiler til nye eksterne supertyper og koble opp egenskaper til nye eksterne datatyper.
@@ -51,6 +54,7 @@ image::img/arv_fra_ekstern_pakke.png[alt="diagram med en UML-klasse som viser ar
 ====
 
 .Generer GML-Applikasjonsskjema (.xsd) for leveransepakkene
+[%collapsible]
 ====
 * Lag en GML-Applikasjonsskjemafil (.xsd) som denne spesielle leveransen skal valideres mot.
 * Høyreklikk på pakka i Browser og velg Specialize -> ShapeChange  -> Transform...
@@ -60,6 +64,7 @@ Eksempel på skjemafil med ekstern avhengighet finnes på http://skjema.geonorge
 ====
 
 .Generer GML-eksempeldatafiler (.gml) for leveransepakkene
+[%collapsible]
 ====
 * Lag en GML-fil med et objekt av hver objekttype og test at det som modellen beskriver kan leses i klienter.
 * Høyreklikk på pakka i Browser og velg Specialize -> Scripts -> listGMLExample.
@@ -71,6 +76,7 @@ video::video/lageGMLEksempel.mp4[]
 ====
 
 .Hva kan modularitet brukes til?
+[%collapsible]
 ====
 * Lager vi applikasjonsskjema med innhold som hensiktsmessige moduler kan vi sette dem sammen i ulike arkitekturer.
 
