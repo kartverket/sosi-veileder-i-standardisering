@@ -1,5 +1,6 @@
 = Veileder i å modellere en produktspesifikasjon
-Versjon 2024-08-28
+
+Versjon 2024-09-04
 
 Dette er ei 29-punkts løype for å lage informasjonsmodellen i en SOSI-produktspesifikasjon basert på fagområdestandarder.
 
