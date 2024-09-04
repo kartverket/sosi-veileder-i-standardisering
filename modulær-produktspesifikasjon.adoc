@@ -1,0 +1,82 @@
+= Veileder i å modellere en modulær SOSI produktspesifikasjon (Utkast)
+
+Versjon 2024-09-04
+
+== Tradisjonell modellering
+
+Tradisjonell modellering av produkt er med kun et applikasjonsskjema med et felles applikasjonsskjema for alle brukstilfeller +
+Denne løypa er godt innarbeidet i infrastrukturen og dekker godt brukstilfeller som har fokus på leveranser av forvaltningsdata. +
+Dette dekker oftest også alle enklere brukstilfeller, om enn med å måtte få en del unødvendige data med på lasset. +
+
+== Modellering av produkt med fler enn et applikasjonsskjema
+
+.Planlegg et applikasjonsskjema for hver gruppe av brukstilfeller eller for hver fase i en dataflyt eller dataformat[%collapsible]
+====
+* Gruppér brukstilfeller med fellestrekk og bestem hvordan modulstrukturen skal være.
+* Lag en applikasjonsskjemapakke for hver modul.
+
+image::img/modulære_pakker.png[alt="EA Browser med visning av tre UML-pakker"]
+
+* Gå inn i hver pakke og legg inn de klassene som hører hjemme der.
+* Legg inn et unikt navnerom (targetNamespace) for hver applikasjonsskjemapakke.
+* Legg inn et enkelt navneromsprefiks (xmlns) unikt for hver pakkegruppering. (eks. basis, app1, app2)
+
+image::img/gjenbruk_av_pakker.png[alt="diagram med tre UML-pakker som viser utvalgte tagged values"]
+
+* Til støtte for valg av dataformat finnes utkast (2023-03-15) til en tabell over formater og karakteriseringskriterier. +
+https://docs.google.com/spreadsheets/d/1n7tOR8Ny5DcOL9fn_4jZaXeLl33-mwDY2kwq2GAI7v4/edit#gid=98722557[Kriterier for valg av dataformat]
+
+====
+
+
+
+.Dra inn pakker i pakkediagram og sett avhengigheter mellom disse
+====
+* I pakker som skal være grunnlag for leveranser lages et pakkediagram som kalles Pakkeavhengighet.
+* Dra inn denne pakka i pakkediagrammet.
+* Dra inn de andre pakkene som elementene i denne pakka skal benytte elementer fra.
+* Legg inn pakkeavhengighetspil fra denne pakka til de pakkene som man har avhengigheter til.
+
+image::img/pakkeavhengighet.png[alt="diagram med en UML-pakke som viser avhengighet til en annen"]
+====
+
+.Dra inn datatyper og supertyper i hoveddiagrammene og sett referanser til disse
+====
+* Åpne eksisterende hoveddiagrammer og dra aktuelle supertyper og datatyper fra andre pakker inn i diagrammet.
+* Legg inn arvepiler til nye eksterne supertyper og koble opp egenskaper til nye eksterne datatyper.
+(Liknende beskrivelser kan finnes i punkt 11 og 12 i den gamle veilederen).
+
+image::img/arv_fra_ekstern_pakke.png[alt="diagram med en UML-klasse som viser arv fra ekstern UML-klasse"]
+====
+
+.Generer GML-Applikasjonsskjema (.xsd) for leveransepakkene
+====
+* Lag en GML-Applikasjonsskjemafil (.xsd) som denne spesielle leveransen skal valideres mot.
+* Høyreklikk på pakka i Browser og velg Specialize -> ShapeChange  -> Transform...
+Eksempel på skjemafil med ekstern avhengighet finnes på http://skjema.geonorge.no/sositest/produktspesifikasjon/Bygning3D/5.0
+
+====
+
+.Generer GML-eksempeldatafiler (.gml) for leveransepakkene
+====
+* Lag en GML-fil med et objekt av hver objekttype og test at det som modellen beskriver kan leses i klienter.
+* Høyreklikk på pakka i Browser og velg Specialize -> Scripts -> listGMLExample.
+(Se enkel video).
+<video width="560" height="315" controls><source src="video/lageGMLEksempel.mp4" type="video/mp4"/>video</video>
+====
+
+.Hva kan modularitet brukes til?
+====
+* Lager vi applikasjonsskjema med innhold som hensiktsmessige moduler kan vi sette dem sammen i ulike arkitekturer.
+
+image::img/modularitetseksempler.png[alt="diagram av UML-pakker som inneholder andre UML-pakker med modulært innhold"]
+
+image::img/modularitetseksempel-1.png[alt="diagram av UML-pakker som viser avhengigheter til andre UML-pakker med mer generelt innhold"]
+Eksempel 1 viser en felles kjerne som utvides for ulike formål. Disse implementerbare modulene kan beskrive ulike faser i dataflyten, og spesialtilpassinger til ulike leveranser.
+
+image::img/modularitetseksempel-2.png[alt="diagram av en UML-pakke som har avhengighet til to andre UML-pakker med mer spesielt innhold"]
+Eksempel 2 viser ulike moduler for ulike formål, og en modul som beskriver en sammensatt leveranse.
+====
+
+
+<<<
