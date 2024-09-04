@@ -44,6 +44,7 @@ image::img/pakkeavhengighet.png[alt="diagram med en UML-pakke som viser avhengig
 ====
 * Åpne eksisterende hoveddiagrammer og dra aktuelle supertyper og datatyper fra andre pakker inn i diagrammet.
 * Legg inn arvepiler til nye eksterne supertyper og koble opp egenskaper til nye eksterne datatyper.
+
 (Liknende beskrivelser kan finnes i punkt 11 og 12 i den gamle veilederen).
 
 image::img/arv_fra_ekstern_pakke.png[alt="diagram med en UML-klasse som viser arv fra ekstern UML-klasse"]
@@ -53,6 +54,7 @@ image::img/arv_fra_ekstern_pakke.png[alt="diagram med en UML-klasse som viser ar
 ====
 * Lag en GML-Applikasjonsskjemafil (.xsd) som denne spesielle leveransen skal valideres mot.
 * Høyreklikk på pakka i Browser og velg Specialize -> ShapeChange  -> Transform...
+
 Eksempel på skjemafil med ekstern avhengighet finnes på http://skjema.geonorge.no/sositest/produktspesifikasjon/Bygning3D/5.0
 
 ====
