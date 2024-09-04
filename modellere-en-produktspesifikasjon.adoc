@@ -7,6 +7,8 @@ https://sosi.geonorge.no/veiledere/Veileder_i_å_modellere_produktspesifikasjon_
 
 En variant for revisjon:
 
+include::revidere-en-eksisterende-SOSI-produktspesifikasjon.adoc[]
+
 https://sosi.geonorge.no/veiledere/Veileder_i_å_revidere_produktspesifikasjon.html
 
 
