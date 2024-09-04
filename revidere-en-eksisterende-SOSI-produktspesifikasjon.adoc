@@ -1,4 +1,5 @@
 = Veileder i å revidere en eksisterende SOSI produktspesifikasjon - FKB-utkast
+
 Versjon 2024-08-28
 
 Forrige versjon fra https://sosi.geonorge.no/veiledere/Veileder_i_å_revidere_produktspesifikasjon.html[2021-07-09]
