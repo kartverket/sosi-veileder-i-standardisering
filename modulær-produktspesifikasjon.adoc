@@ -63,8 +63,10 @@ Eksempel på skjemafil med ekstern avhengighet finnes på http://skjema.geonorge
 ====
 * Lag en GML-fil med et objekt av hver objekttype og test at det som modellen beskriver kan leses i klienter.
 * Høyreklikk på pakka i Browser og velg Specialize -> Scripts -> listGMLExample.
-(Se enkel video).
-<video width="560" height="315" controls><source src="video/lageGMLEksempel.mp4" type="video/mp4"/>video</video>
+
+Se enkel video:
+
+video::video/lageGMLEksempel.mp4
 ====
 
 .Hva kan modularitet brukes til?
