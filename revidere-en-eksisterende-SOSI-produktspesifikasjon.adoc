@@ -2,7 +2,7 @@
 
 Versjon 2024-08-28
 
-Forrige versjon fra https://sosi.geonorge.no/veiledere/Veileder_i_å_revidere_produktspesifikasjon.html[2021-07-09]
+Forrige versjon av denne veilederen fra https://sosi.geonorge.no/veiledere/Veileder_i_å_revidere_produktspesifikasjon.html[2021-07-09]
 
 Dette er en variant av løypa for å lage informasjonsmodellen i en SOSI-produktspesifikasjon som et utplukk av objekttyper fra fagområdene i SOSI del 2. 
 
