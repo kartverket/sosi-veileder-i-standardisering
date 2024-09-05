@@ -42,7 +42,7 @@ include::modellere-en-produktspesifikasjon.adoc[]
 .Installering av modelleringsverktøy
 [%collapsible]
 ====
-include::Installering.adoc[]
+https://sosi.geonorge.no/veiledere/installasjonsveileder/
 ====
 
 .Modellere en kodeliste for ekstern forvaltning
