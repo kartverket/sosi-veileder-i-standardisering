@@ -1,6 +1,6 @@
 = Veiledere i bruk av standarder
 
-Versjon 2024-08-30
+Versjon 2024-09-05
 
 Hvis du opplever problemer med disse veilederne er det fint om du kan sende en tilbakemelding til +
 standardiseringssekretariatet@kartverket.no
@@ -15,7 +15,7 @@ Send oss også gjerne en beskrivelse av hva du savner veiledning om.
 include::lage-en-standardisert-produktspesifikasjon.adoc[]
 ====                      
 
-(lage en ps basert på fagområdestandarder)          
+//(lage en ps basert på fagområdestandarder)          
 
 .Revidere en eksisterende SOSI-produktspesifikasjon
 [%collapsible]
@@ -35,7 +35,7 @@ https://sosi.geonorge.no/veiledere/UML/
 include::modellere-en-produktspesifikasjon.adoc[]
 ====
                     
-(Installering av modelleringsverktøy)
+//(Installering av modelleringsverktøy)
 
 == Modellering
 
