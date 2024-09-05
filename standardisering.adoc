@@ -23,6 +23,12 @@ include::lage-en-standardisert-produktspesifikasjon.adoc[]
 include::revidere-en-eksisterende-SOSI-produktspesifikasjon.adoc[]
 ====
 
+.Veileder i å lese UML-diagrammer
+[%collapsible]
+====
+https://sosi.geonorge.no/veiledere/UML/
+====
+     
 .Modellere en SOSI-produktspesifikasjon
 [%collapsible]
 ====
