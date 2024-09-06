@@ -1,5 +1,7 @@
-= Veileder i å bruke en eksternt forvaltet kodeliste fra sitt datasett. (uferdig)
-Versjon 2024-08-27
+[.lead]
+Veileder i å bruke en eksternt forvaltet kodeliste fra sitt datasett. (uferdig)
+
+//Versjon 2024-08-27
 
 Generering av egenskapsverdier fra database utføres likt som interne kodelistekoder, og datafilene vil se like ut.
 
