@@ -1,4 +1,4 @@
-= Veiledere i bruk av standarder
+= Veiledere i utvikling og bruk av standarder
 
 Versjon 2024-09-05
 
