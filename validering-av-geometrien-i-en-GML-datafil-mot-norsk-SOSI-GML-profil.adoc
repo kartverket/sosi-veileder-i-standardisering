@@ -1,5 +1,7 @@
-= Veileder i validering av geometrien i en GML-datafil mot norsk SOSI-GML-profil
-Versjon 2024-08-27
+[.lead]
+Veileder i validering av geometrien i en GML-datafil mot norsk SOSI-GML-profil
+
+//Versjon 2024-08-27
 
 Produktspesifikasjoner kan angi at de kun benytter et navnet subsett av geometrityper i den fulle GML 3.2.1 standarden. (I kapittel 11)
 Dette kan verifiseres ved å validere mot en SOSI-GML-profil som beskrevet i standarden: SOSI del 1 - Realisering i GML-format - versjon 5.0.
