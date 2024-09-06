@@ -1,5 +1,6 @@
-= Veileder i modellering av assosiasjoner til objekttyper
-Versjon 2024-08-27
+[.lead]Veileder i modellering av assosiasjoner til objekttyper
+
+//Versjon 2024-08-27
 
 Der en geografisk objekttype (FeatureType) har en navigerbar assosiasjon til en annen objekttype skal den navigerbare assosiasjonsenden ha en tagged value inLineOrByReference med verdien byReference.
 Tagged value inLineOrByReference er beskrevet i standarden regler for UML-modellering versjon 5.1 kapittel 13, og bruken av verdien byReference er for GML beskrevet (noe indirekte) i standarden Realisering i GML-format versjon 5.0 kapittel 7.2.
