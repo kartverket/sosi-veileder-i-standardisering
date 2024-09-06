@@ -1,5 +1,6 @@
-= Veileder i modellering av rekkefølgen på assosiasjonsroller i GML
-Versjon 2024-08-26
+[.lead]Veileder i modellering av rekkefølgen på assosiasjonsroller i GML
+
+//Versjon 2024-08-26
 
 I GML (som i XML) er det krav på å følge samme rekkefølgen på elementene som de som er beskrevet i GML-Applikasjonsskjemafila (.XSD).
 Rekkefølgen på egenskaper kontrolleres i Enterprise Architect, husk å ta vekk alfabetisk sortering under Start->Preferences->Objects.
