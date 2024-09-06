@@ -1,9 +1,10 @@
-[.lead]Veileder i modellering av egenskaper med geometri som datatyper (uferdig om topologi)
+[discrete]
+=== Veileder i modellering av egenskaper med geometri som datatyper (uferdig om topologi)
 
 //Versjon 2024-08-27
 
-[.lead]
-Brukstilfeller
+[discrete]
+==== Brukstilfeller
 
 Brukstilfellene vil indikere hvilken type geometri som er nødvendig, enklest mulig geometritype bør alltid velges.
 Tidligere ble norske klassenavn benyttet i modellene, Punkt, Kurve, Flate og Sverm. Dette er fortsatt støttet, og disse skal automatisk mappes til moderne og realiserbare typer.
@@ -11,8 +12,8 @@ Tidligere ble norske klassenavn benyttet i modellene, Punkt, Kurve, Flate og Sve
 .Eksempel på klasser med nasjonal og internasjonal geometritype:
 image::./img/Eksempler-på-modellering-av-geometri-5.1.png[alt="X"]
 
-[.lead]
-Forholdet mellom nasjonale og internasjonale geometrityper
+[discrete]
+==== Forholdet mellom nasjonale og internasjonale geometrityper
 
 .Modell som viser forholdet mellom eldre nasjonale geometrityper og geometrityper i internasjonale standarder:
 image::./img/Realisering-av-geometrityper-5.1.png[alt="X"]
@@ -34,8 +35,8 @@ image::./img/Kommune1.png[alt="X"]
 Eksempel på datasett i GML-format med naboflater og enklaver:
 http://skjema.geonorge.no/SOSITEST/produktspesifikasjon/Kommunefusjon5/2019/eksempel/KlasseMgeometriegenskaper3.gml
 
-[.lead]
-Modellering av egenskaper med heterogene geometrityper
+[discrete]
+==== Modellering av egenskaper med heterogene geometrityper
 
 Egenskaper med geometri som kan være enten punkt, kurve, flate eller legeme kan modelleres med typen GM_Object.
 Dette vil generere GML_Applikasjonsskjema som tillater gml:Point, gml_Curve og gml:Surface (og gml:Solid).
@@ -45,8 +46,8 @@ TBD:-diagram--eksempelfigur--eksempelfigur-
 
 
 
-[.lead]
-Modellering og utveksling av objekters topologiske egenskaper
+[discrete]
+==== Modellering og utveksling av objekters topologiske egenskaper
 
 Dersom brukstilfellene krever utveksling av topologiegenskaper må UML-modellen angi dette eksplisitt.
 Denne modelleringen er beskrevet i Regler for UML-modellering versjon 5 i kapittel 11.4.3.4 Topologi.
@@ -65,8 +66,8 @@ Oppbygging av topologistrukturer på mottakersiden er en omfattende prosess, spe
 
 TBD:-diagram--eksempelfigur-
 
-[.lead]
-Delt geometri
+[discrete]
+==== Delt geometri
 
 Delt geometri er der en geometri kan beskrives i et objekt, og deles/refereres fra andre objekter. 
 Bruk av dette kan ved spesielt nøye bruk unngå noen vanlige effekter som glipper og overlapp, spesielt ved avrunding av koordinater.
@@ -76,8 +77,8 @@ Delt geometri må modelleres spesielt i UML, med geometriklasser av typen "Compo
 
 TBD:-diagram--eksempelfigur--eksempelfigur-
 
-[.lead]
-Normalisert geometri
+[discrete]
+==== Normalisert geometri
 
 Normalisert geometri betyr at hver posisjon beskrives kun en gang, og at det kun refereres til fra andre geometrier av høyere orden.
 Mottakeren må da bygget opp fullstendig geometri for hvert objekt.
@@ -86,4 +87,3 @@ men geometrityper av typen "Composite" kan benyttes til å angi at man kan/skal 
 
 TBD:-diagram--eksempelfigur--eksempelfigur-
 
-<<<

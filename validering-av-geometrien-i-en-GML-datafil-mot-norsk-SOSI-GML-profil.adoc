@@ -1,10 +1,10 @@
-[.lead]
-Veileder i validering av geometrien i en GML-datafil mot norsk SOSI-GML-profil
+[discrete]
+=== Veileder i validering av geometrien i en GML-datafil mot norsk SOSI-GML-profil
 
-//Versjon 2024-08-27
+//Versjon 2024-09-06
 
-Produktspesifikasjoner kan angi at de kun benytter et navnet subsett av geometrityper i den fulle GML 3.2.1 standarden. (I kapittel 11)
-Dette kan verifiseres ved å validere mot en SOSI-GML-profil som beskrevet i standarden: SOSI del 1 - Realisering i GML-format - versjon 5.0.
+Produktspesifikasjoner kan angi at de kun benytter et navnet subsett av geometrityper i den fulle GML 3.2.1 standarden. (I kapittel 11) 
+Dette kan verifiseres ved å validere mot en SOSI-GML-profil som beskrevet i standarden: **SOSI del 1 - Realisering i GML-format - versjon 5.0.**
 
 Der beskrives profilene:
 
@@ -72,7 +72,6 @@ Mange visningsverktøy for GML-datafiler handterer akserekkefølge og akseenhet 
 Men de har ikke (2018) implementert at akseantall også er en entydig funksjon av EPSG-koden, så det anbefales i tillegg å legge inn srsDimension eksplisitt på 3D-data.
 
 
-<gml:Curve srsName="http://www.opengis.net/def/crs/epsg/0/6173" srsDimension="3">
+``<gml:Curve srsName="http://www.opengis.net/def/crs/epsg/0/6173" srsDimension="3">``
 
 
-<<<

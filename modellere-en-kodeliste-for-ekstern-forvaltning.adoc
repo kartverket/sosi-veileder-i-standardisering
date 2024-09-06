@@ -1,5 +1,5 @@
-[.lead]
-Veileder i å modellere en kodeliste for ekstern forvaltning
+[discrete]
+=== Veileder i å modellere en kodeliste for ekstern forvaltning
 
 //Versjon 2024-08-27
 

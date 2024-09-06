@@ -1,5 +1,5 @@
-[.lead]
-Veileder i å bruke en eksternt forvaltet kodeliste i sin egen UML-modell
+[discrete]
+=== Veileder i å bruke en eksternt forvaltet kodeliste i sin egen UML-modell
 
 //Versjon 2024-08-27
 
@@ -11,10 +11,11 @@ Egenskaper som har eksternt forvaltede kodelister som type skal kobles opp mot d
 Da vil modellvalidering ikke melde feil om manglende egenskapstype.
 Det skal også legges inn en tagged value defaultCodeSpace på egenskapen, med stien til kodelista.
 
-<img src="img/defaultCodeSpace.png" alt="egenskapens sti til kodelista">
+``<img src="img/defaultCodeSpace.png" alt="egenskapens sti til kodelista">``
 
 I ei generert GML 3.2.1 applikasjonsskjemafil vil denne beskrivelsen se slik ut:
 
+[source]
 <element name="kommunenummer" type="gml:CodeType">
    <annotation>
       <appinfo>
@@ -25,8 +26,8 @@ I ei generert GML 3.2.1 applikasjonsskjemafil vil denne beskrivelsen se slik ut:
       </appinfo>
    </annotation>
 
+
 Ei GML 3.2.1 datafil vil bruke formen:
 
-<kommunenummer>0101</kommunenummer>
+``<kommunenummer>0101</kommunenummer>``
 
-<<<

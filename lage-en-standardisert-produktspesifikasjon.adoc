@@ -1,10 +1,10 @@
-[.lead]
-Veileder i å lage en standardisert produktspesifikasjon
+[discrete]
+=== Veileder i å lage en standardisert produktspesifikasjon
 
 //Versjon 2024-08-26
 
-[.lead]
-Standardisert produktspesifikasjon
+[discrete]
+==== Standardisert produktspesifikasjon
 
 En produktspesifikasjon som både følger standarden for SOSI produktspesifikasjoner, og styrende dokument for standardisering med kvalitetssikring gjennom en åpen konsensusprosess.
 
@@ -14,13 +14,13 @@ Den skal også inneholde kvalitetskrav, geografisk utstrekning, formatrealiserin
 Kartverket skal godkjenne alle SOSI produktspesifikasjoner.
 Dette er beskrevet i dokumentet https://register.geonorge.no/standarder/sosi/del-1-generell-del/sosi-produktspesifikasjoner-krav-og-godkjenning
 
-[.lead]
-Støtteverktøy
+[discrete]
+==== Støtteverktøy
 
 Støtteverktøy finnes på stien https://www.geonorge.no/verktoy/verktoy-for-produktspesifikasjon/
 
-[.lead]
-SOSI standarder
+[discrete]
+==== SOSI standarder
 
 SOSI standarder utvikles etter klare prosessprinsipper.
 Enhver part eller person i geomatikkmiljøet kan sende inn prosjektforslag til standardiseringssekretariatet.

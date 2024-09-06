@@ -1,15 +1,15 @@
-[.lead]
-Veileder i modellering med stereotyper og UML-profiler i EA (15 og seinere)
+[discrete]
+=== Veileder i modellering med stereotyper og UML-profiler i EA (15 og seinere)
 
 //Versjon 2024-08-27
 
-[.lead]
-tl;dr - Nye klasser bør lages med EA Toolbox og SOSI-UML-Profil-5.1. 
+[discrete]
+==== tl;dr - Nye klasser bør lages med EA Toolbox og SOSI-UML-Profil-5.1. 
 
 Eksisterende klasser kan gjerne bytte til SOSI-UML-Profil-5.1, men da må tagged values kontrolleres. 
 
-[.lead]
-Lengre forklaring:
+[discrete]
+==== Lengre forklaring:
 
 Alle klasser skal ha standardiserte stereotyper, og alle modellelementer kan ha et sett med standardiserte tagged values.
 Fra tidligere tider har stereotype vært en enkel tekststreng på modellelementene, og modellelementene har eid sitt eget sett av tagged values. Dette gjelder for eksempel for klasser med tekstlig stereotype «featureType».
@@ -26,8 +26,9 @@ Nyere versjoner av Enterprise Architect (EA 14/EA 15) har tatt dette til følge 
 Vi har dessverre observert at når vi bytter fra en slik stereotype i en UML-profil til en stereotype fra en annen UML-profil vil vi kunne miste noen eksisterende verdier i de beskrevne tagged values !!!
 Vi må derfor alltid ha god kontroll på verdiene i de beskrevne standardiserte tagged values.
 
-[.lead]
-Vi har i dag tre moderne UML-profiler:
+
+[discrete]
+==== Vi har i dag tre moderne UML-profiler:
 
 "GML" som kommer med EA "native" - denne har noen viktige begrensninger og dekker IKKE norske behov og standarder (underpakker behandles ikke etc.). Vi anbefaler derfor å "disable MDG-technology GML" slik at denne ikke vises.
 
@@ -39,4 +40,4 @@ Vi anbefaler nå at hvis man bytter til andre UML-profiler må man klarlegge hvo
 Det er også ofte vanskelig å se tagger fra stereotyper som kommer fra eldre uml-profiler (for eksempel uml-profil SOSI). Disse taggene kan vises ved å velge elementet, høyreklikke på Properties og så velge Properties…. Da vil en i vinduet som kommer opp kunne se flipper helt til høyre som kan vise resten av elementets tagged values.
 Andre konfigurasjoner som påvirker hvilke tagger man ser er å enable/disable under menyene Specialize: Manage-Tech (for MDG) og Manage-Addin (for Addins).
 
-<<<
+

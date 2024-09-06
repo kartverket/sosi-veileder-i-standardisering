@@ -1,6 +1,6 @@
 = Veiledere i utvikling og bruk av standarder
 
-Versjon 2024-09-05
+Versjon 2024-09-06
 
 Hvis du opplever problemer med disse veilederne er det fint om du kan sende en tilbakemelding til +
 standardiseringssekretariatet@kartverket.no
@@ -26,7 +26,7 @@ include::revidere-en-eksisterende-SOSI-produktspesifikasjon.adoc[]
 .Lese og forstå UML-diagrammer
 [%collapsible]
 ====
-https://sosi.geonorge.no/veiledere/UML/
+Se https://sosi.geonorge.no/veiledere/UML/
 ====
      
 .Modellere en SOSI-produktspesifikasjon
@@ -37,12 +37,13 @@ include::modellere-en-produktspesifikasjon.adoc[]
                     
 //(Installering av modelleringsverktøy)
 
+
 == Modellering
 
 .Installering av modelleringsverktøy
 [%collapsible]
 ====
-https://sosi.geonorge.no/veiledere/installasjonsveileder/
+Se https://sosi.geonorge.no/veiledere/installasjonsveileder/
 ====
 
 .Modellere en kodeliste for ekstern forvaltning
@@ -50,6 +51,7 @@ https://sosi.geonorge.no/veiledere/installasjonsveileder/
 ====
 include::modellere-en-kodeliste-for-ekstern-forvaltning.adoc[]
 ====
+
 
 .Bruke en eksternt forvaltet kodeliste fra sitt datasett
 [%collapsible]
@@ -75,20 +77,22 @@ include::valg-av-eksternt-forvaltet-kodeliste-for-Kommunenummer.adoc[]
 include::validering-av-geometrien-i-en-GML-datafil-mot-norsk-SOSI-GML-profil.adoc[]
 ====
 
+
 == Detaljer om modellering
-    
+
 .Modellering av rekkefølgen på assosiasjonsroller i GML
 [%collapsible]
 ====
 include::modellering-av-rekkefølgen-på-assosiasjonsroller-i-GML.adoc[]
 ====
 
+
+
 .Modellering av assosiasjoner til objekttyper
 [%collapsible]
 ====
 include::modellering-av-assosiasjoner-til-objekttyper.adoc[]
 ====
-
 
 .Modellering av egenskaper med geometri som datatyper
 [%collapsible]
@@ -101,5 +105,3 @@ include::modellering-av-egenskaper-med-geometri-som-datatyper.adoc[]
 ====
 include::modellering-med-stereotyper-og-UML-profiler-i-EA.adoc[]
 ====
-
-<<<<
