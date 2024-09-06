@@ -1,5 +1,7 @@
-= Veileder i å bruke en eksternt forvaltet kodeliste i sin egen UML-modell
-Versjon 2024-08-27
+[.lead]
+Veileder i å bruke en eksternt forvaltet kodeliste i sin egen UML-modell
+
+//Versjon 2024-08-27
 
 I modeller som skal benytte eksternt forvaltede kodelister må man lage en egen tom kodeliste med det samme navn som den eksterne.
 
