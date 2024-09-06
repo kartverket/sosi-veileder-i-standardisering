@@ -1,14 +1,18 @@
-= Veileder i modellering av egenskaper med geometri som datatyper (uferdig om topologi)
-Versjon 2024-08-27
+[.lead]Veileder i modellering av egenskaper med geometri som datatyper (uferdig om topologi)
 
-== Brukstilfeller
+//Versjon 2024-08-27
+
+[.lead]
+Brukstilfeller
+
 Brukstilfellene vil indikere hvilken type geometri som er nødvendig, enklest mulig geometritype bør alltid velges.
 Tidligere ble norske klassenavn benyttet i modellene, Punkt, Kurve, Flate og Sverm. Dette er fortsatt støttet, og disse skal automatisk mappes til moderne og realiserbare typer.
 
 .Eksempel på klasser med nasjonal og internasjonal geometritype:
 image::./img/Eksempler-på-modellering-av-geometri-5.1.png[alt="X"]
 
-== Forholdet mellom nasjonale og internasjonale geometrityper
+[.lead]
+Forholdet mellom nasjonale og internasjonale geometrityper
 
 .Modell som viser forholdet mellom eldre nasjonale geometrityper og geometrityper i internasjonale standarder:
 image::./img/Realisering-av-geometrityper-5.1.png[alt="X"]
@@ -30,7 +34,9 @@ image::./img/Kommune1.png[alt="X"]
 Eksempel på datasett i GML-format med naboflater og enklaver:
 http://skjema.geonorge.no/SOSITEST/produktspesifikasjon/Kommunefusjon5/2019/eksempel/KlasseMgeometriegenskaper3.gml
 
-== Modellering av egenskaper med heterogene geometrityper
+[.lead]
+Modellering av egenskaper med heterogene geometrityper
+
 Egenskaper med geometri som kan være enten punkt, kurve, flate eller legeme kan modelleres med typen GM_Object.
 Dette vil generere GML_Applikasjonsskjema som tillater gml:Point, gml_Curve og gml:Surface (og gml:Solid).
 OGC Simple Feature støtter dette, og Oracle, PostGIS  og QGIS  kan handtere slike heterogene geometriegenskaper.
@@ -39,7 +45,9 @@ TBD:-diagram--eksempelfigur--eksempelfigur-
 
 
 
-== Modellering og utveksling av objekters topologiske egenskaper
+[.lead]
+Modellering og utveksling av objekters topologiske egenskaper
+
 Dersom brukstilfellene krever utveksling av topologiegenskaper må UML-modellen angi dette eksplisitt.
 Denne modelleringen er beskrevet i Regler for UML-modellering versjon 5 i kapittel 11.4.3.4 Topologi.
 Realisering er beskrevet i standarden Realisering i GML-format versjon 5 i kapittel 8.5 Realisering av toplologi.
@@ -57,7 +65,9 @@ Oppbygging av topologistrukturer på mottakersiden er en omfattende prosess, spe
 
 TBD:-diagram--eksempelfigur-
 
-== Delt geometri
+[.lead]
+Delt geometri
+
 Delt geometri er der en geometri kan beskrives i et objekt, og deles/refereres fra andre objekter. 
 Bruk av dette kan ved spesielt nøye bruk unngå noen vanlige effekter som glipper og overlapp, spesielt ved avrunding av koordinater.
 Dette gjøre at data med delt geometri vil kunne være mer topologiklare for mottakeren.
@@ -66,7 +76,9 @@ Delt geometri må modelleres spesielt i UML, med geometriklasser av typen "Compo
 
 TBD:-diagram--eksempelfigur--eksempelfigur-
 
-== Normalisert geometri
+[.lead]
+Normalisert geometri
+
 Normalisert geometri betyr at hver posisjon beskrives kun en gang, og at det kun refereres til fra andre geometrier av høyere orden.
 Mottakeren må da bygget opp fullstendig geometri for hvert objekt.
 I SOSI-format og gml (og geojson?)  er det ikke vanlig praksis å referere til endepunkter på kurver, 
