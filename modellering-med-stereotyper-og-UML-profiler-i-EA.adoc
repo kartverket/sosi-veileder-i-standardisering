@@ -1,10 +1,16 @@
-= Veileder i modellering med stereotyper og UML-profiler i EA (15 og seinere)
-Versjon 2024-08-27
+[.lead]
+Veileder i modellering med stereotyper og UML-profiler i EA (15 og seinere)
 
-== tl;dr - Nye klasser bør lages med EA Toolbox og SOSI-UML-Profil-5.1. 
+//Versjon 2024-08-27
+
+[.lead]
+tl;dr - Nye klasser bør lages med EA Toolbox og SOSI-UML-Profil-5.1. 
+
 Eksisterende klasser kan gjerne bytte til SOSI-UML-Profil-5.1, men da må tagged values kontrolleres. 
 
-== Lengre forklaring:
+[.lead]
+Lengre forklaring:
+
 Alle klasser skal ha standardiserte stereotyper, og alle modellelementer kan ha et sett med standardiserte tagged values.
 Fra tidligere tider har stereotype vært en enkel tekststreng på modellelementene, og modellelementene har eid sitt eget sett av tagged values. Dette gjelder for eksempel for klasser med tekstlig stereotype «featureType».
 I en periode har modellelementer også kunnet bruke stereotyper fra standardiserte UML-profiler, som for eksempel stereotypen «FeatureType» fra UML-profilen "SOSI-UML-Profil-5.0". Stereotypene i denne profilen eier ingen tagged values.
@@ -20,7 +26,9 @@ Nyere versjoner av Enterprise Architect (EA 14/EA 15) har tatt dette til følge 
 Vi har dessverre observert at når vi bytter fra en slik stereotype i en UML-profil til en stereotype fra en annen UML-profil vil vi kunne miste noen eksisterende verdier i de beskrevne tagged values !!!
 Vi må derfor alltid ha god kontroll på verdiene i de beskrevne standardiserte tagged values.
 
-== Vi har i dag tre moderne UML-profiler:
+[.lead]
+Vi har i dag tre moderne UML-profiler:
+
 "GML" som kommer med EA "native" - denne har noen viktige begrensninger og dekker IKKE norske behov og standarder (underpakker behandles ikke etc.). Vi anbefaler derfor å "disable MDG-technology GML" slik at denne ikke vises.
 
 "SOSI" er en UML-profil som kommer med SOSI-plugginn og er i hovedsak utviklet for å følge reglene i SOSI 4.0. Den har en blanding der noen tagger eies av stereotyper og noen eies av klassene, og den dekker fortsatt norske behov.
