@@ -1,14 +1,17 @@
-= Veileder i å modellere en modulær SOSI produktspesifikasjon (Utkast)
+[.lead]
+Veileder i å modellere en modulær SOSI produktspesifikasjon (Utkast)
 
-Versjon 2024-09-04
+//Versjon 2024-09-04
 
-== Tradisjonell modellering
+[.lead]
+Tradisjonell modellering
 
 Tradisjonell modellering av produkt er med kun et applikasjonsskjema med et felles applikasjonsskjema for alle brukstilfeller +
 Denne løypa er godt innarbeidet i infrastrukturen og dekker godt brukstilfeller som har fokus på leveranser av forvaltningsdata. +
 Dette dekker oftest også alle enklere brukstilfeller, om enn med å måtte få en del unødvendige data med på lasset. +
 
-== Modellering av produkt med fler enn et applikasjonsskjema
+[.lead]
+Modellering av produkt med fler enn et applikasjonsskjema
 
 .Planlegg et applikasjonsskjema for hver gruppe av brukstilfeller eller for hver fase i en dataflyt eller dataformat[%collapsible]
 [%collapsible]
