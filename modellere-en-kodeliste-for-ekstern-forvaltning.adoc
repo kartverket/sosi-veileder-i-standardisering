@@ -1,5 +1,7 @@
-= Veileder i å modellere en kodeliste for ekstern forvaltning
-Versjon 2024-08-27
+[.lead]
+Veileder i å modellere en kodeliste for ekstern forvaltning
+
+//Versjon 2024-08-27
 
 Koder i kodelister skal ha navn etter samme mønster som alle andre UML-modellelementer, slik at lesere intuitivt forstår meningen med koden.
 Kodelister med veldig mange koder er vanligvis ikke godt egnet til å vises i sin helhet i et UML-diagram.
