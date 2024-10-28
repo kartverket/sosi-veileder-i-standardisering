@@ -9,29 +9,3 @@ spec:
   type: "documentation"
   lifecycle: "production"
   owner: "standardisering"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_sosi-veileder-i-standardisering"
-  title: "Security Champion sosi-veileder-i-standardisering"
-spec:
-  type: "security_champion"
-  parent: "it_security_champions"
-  members:
-  - "toreJohnsen"
-  children:
-  - "resource:sosi-veileder-i-standardisering"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "sosi-veileder-i-standardisering"
-  links:
-  - url: "https://github.com/kartverket/sosi-veileder-i-standardisering"
-    title: "sosi-veileder-i-standardisering på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_sosi-veileder-i-standardisering"
-  dependencyOf:
-  - "component:sosi-veileder-i-standardisering"
